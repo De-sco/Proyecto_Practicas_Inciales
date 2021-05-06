@@ -3,6 +3,11 @@ import { RouterModule, Routes } from '@angular/router'; // Permite definir las r
 
 
 // Agregando todos los componenetes (los que estan en la carpeta 'components')
+
+import { LoginFormComponent } from './components/login-form/login-form.component';
+import { UserFormComponent } from './components/user-form/user-form.component';
+
+
 import { GameListComponent } from './components/game-list/game-list.component';
 import { InicioComponent } from './components/inicio/inicio.component'; // Importando el componente de inicio 
 import { ComentariosComponent } from './components/comentarios/comentarios.component';
@@ -19,6 +24,21 @@ import { AgregarJuegoComponent } from './components/agregar-juego/agregar-juego.
 // Creando las rutas de la aplicacion, todas las rutas van a retornar el archivo html que esta en sus carpetas (las que se importaron arriba)
 
 const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/login',
+    pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    component: LoginFormComponent
+  },
+  {
+    path: 'registro',
+    component: UserFormComponent
+  },
+
+
   {
     path: '',  // Si no le colocamos nada, esta sera la ruta inicial
     redirectTo: '/incio',

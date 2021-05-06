@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
+import { UserFormComponent } from './components/user-form/user-form.component';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigatorComponent } from './components/navigator/navigator.component';
@@ -23,6 +27,9 @@ import { AgregarJuegoComponent } from './components/agregar-juego/agregar-juego.
 @NgModule({
   declarations: [
     AppComponent,
+    NavigationComponent,
+    LoginFormComponent,
+    UserFormComponent,
     NavigatorComponent,
     GameListComponent,
     InicioComponent,
