@@ -1,0 +1,50 @@
+<!-- Va a permitir agregar un nuevo juego -->
+
+<div class="container">
+    <div class="row">
+
+        <!-- Agregando la tarjeta donde se mostrara toda la informacion del juego -->
+        <div class="card text-center col col-6">
+            <div class="card-header bg-dark text-white">
+                Nombre del juego
+            </div>
+            <img src="https://www.elcomercio.com/files/article_main/uploads/2020/01/10/5e191549c8bb6.jpeg"
+                class="card-img-top" alt="">
+            <div class="card-body">
+                <h5>Descripción del juego</h5>
+                <p class="mb-0">Consola a la que pertenece: xx</p>
+                <p class="mt-0">Año de publicacion: xx</p>
+
+            </div>
+        </div>
+
+        <!-- Campos a llenar para modificar el juego -->
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <form action="" class="mt-4">
+                        <div class="form-group">
+                            <input type="text" name="nombre_juego" placeholder="Nombre del juego" class="form-control mb-4" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input name="consola" placeholder="Consola a la que pertenece" rows="2" class="form-control mb-4">
+                        </div>
+                        <div class="form-group">
+                            <input name="anio" placeholder="Año de publicación" rows="2" class="form-control mb-4">
+                        </div>
+                        <div class="form-group">
+                            <input type="url" name="imagen" placeholder="Imagen" class="form-control mb-4">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="descripcion" placeholder="Descripción" rows="6" class="form-control mb-4"></textarea>
+                        </div>
+                        <div class="col text-center">
+                            <button class="btn btn-success btn-block"><i class="fa fa-floppy-o" aria-hidden="true"></i> GUARDAR CAMBIOS</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
