@@ -1,5 +1,7 @@
 <!-- La barra de navegacion (Se matiene fija en todas las paginas) -->
+<img src = "/assets/img/Arcade_negro.png">
 
+<LINK REL=StyleSheet HREF="src/app/components/navigator/navigator.component.css" TITLE="Contemporaneo">
 <nav class="navbar navbar-expand-lg navbar-light bg-light mt-4 mb-5">
 
     <div class="container">
@@ -8,27 +10,27 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar navbar-dark bg-dark" id="navbarNav">
+            <div class="navbar navbar-light bg-light" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" routerLink="/inicio" routerLinkActive="active"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
+                        <a class="nav-link active" routerLink="/inicio" routerLinkActive="active"><i class="fa fa-out" aria-hidden="true"></i> Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="cursor:pointer;"><i class="fa fa-user" aria-hidden="true"></i> Perfil</a>
+                        <a class="nav-link" style="cursor:pointer;"><i class="fa fa-out" aria-hidden="true"></i> Perfil</a>
                         <div class="submenu">
-                            <div class="submenu-items bg-dark">
-                                <a routerLink="/perfil"  class="nav-link bg-dark" style="cursor:pointer;">
+                            <div class="submenu-items bg-light">
+                                <a routerLink="/perfil"  class="nav-link bg-light" style="cursor:pointer;">
                                     Mi perfil
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="cursor:pointer;"><i class="fa fa-users" aria-hidden="true"></i> Usuarios</a>
+                        <a class="nav-link" style="cursor:pointer;"><i class="fa fa-out" aria-hidden="true"></i> Usuarios</a>
 
                         <div class="submenu">
-                            <div class="submenu-items bg-dark">
-                                <a routerLink="/usuarios_registrados"  class="nav-link bg-dark" style="cursor:pointer;">
+                            <div class="submenu-items bg-light">
+                                <a routerLink="/usuarios_registrados"  class="nav-link bg-light" style="cursor:pointer;">
                                     Registrados
                                 </a>
                             </div>
@@ -36,14 +38,14 @@
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="cursor:pointer;"><i class="fa fa-gamepad"></i> Juegos</a>
+                        <a class="nav-link" style="cursor:pointer;"><i class="fa fa-out"></i> Juegos</a>
 
                         <div class="submenu">
-                            <div class="submenu-items bg-dark">
-                                <a routerLink="/games"  class="nav-link bg-dark" style="cursor:pointer;">
+                            <div class="submenu-items bg-light">
+                                <a routerLink="/games"  class="nav-link bg-light" style="cursor:pointer;">
                                     Buscar Juegos
                                 </a>
-                                <a routerLink="/agregar_juego"  class="nav-link bg-dark" style="cursor:pointer;">
+                                <a routerLink="/agregar_juego"  class="nav-link bg-light" style="cursor:pointer;">
                                     Registrar nuevo juego
                                 </a>
                             </div>
@@ -51,27 +53,27 @@
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="cursor:pointer;"><i class="fa fa-fast-forward" aria-hidden="true"></i> Mi biblioteca</a>
+                        <a class="nav-link" style="cursor:pointer;"><i class="fa fa-out" aria-hidden="true"></i> Mi biblioteca</a>
                         <div class="submenu">
-                            <div class="submenu-items bg-dark">
-                                <a routerLink="/biblioteca_juegos"  class="nav-link bg-dark" style="cursor:pointer;">
+                            <div class="submenu-items bg-light">
+                                <a routerLink="/biblioteca_juegos"  class="nav-link bg-light" style="cursor:pointer;">
                                     Mi biblioteca
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="cursor:pointer;"><i class="fa fa-book" aria-hidden="true"></i> Reportes</a>
+                        <a class="nav-link" style="cursor:pointer;"><i class="fa fa-out" aria-hidden="true"></i> Reportes</a>
 
                         <div class="submenu">
-                            <div class="submenu-items bg-dark">
-                                <a routerLink="/mas_juegos_en_biblioteca"  class="nav-link bg-dark" style="cursor:pointer;">
+                            <div class="submenu-items bg-light">
+                                <a routerLink="/mas_juegos_en_biblioteca"  class="nav-link bg-light" style="cursor:pointer;">
                                     Top 5 con más juegos
                                 </a>
-                                <a routerLink="/mejor_promedio_por_consola"  class="nav-link bg-dark" style="cursor:pointer;">
+                                <a routerLink="/mejor_promedio_por_consola"  class="nav-link bg-light" style="cursor:pointer;">
                                     Top 5 con mejor promedio por consola
                                 </a>
-                                <a routerLink="/juegos_publicados_anio"  class="nav-link bg-dark" style="cursor:pointer;">
+                                <a routerLink="/juegos_publicados_anio"  class="nav-link bg-light" style="cursor:pointer;">
                                     Juegos publicados en un año
                                 </a>
                             </div>
