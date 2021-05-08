@@ -1,44 +1,46 @@
 <app-navigation></app-navigation>
-<form>
+
+<form id = "post-form" action="http://localhost:3000/usuarios" method="POST">
   <fieldset >
     <legend>Ingrese sus datos</legend>
     <br>
     <div class="mb-3">
       <label for="disabledTextInput" class="form-label">Nombre de Usuario</label>
-      <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+      <input type="text"  name = "NoUsuario" id="disabledTextInput" class="form-control" placeholder="Nombre de Usuario">
     </div>
 
     <div class="mb-3">
       <label for="disabledTextInput" class="form-label">Nombres</label>
-      <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+      <input type="text" name = "Nombre" id="disabledTextInput" class="form-control" placeholder="Nombres">
     </div>
 
     <div class="mb-3">
       <label for="disabledTextInput" class="form-label">Apellidos</label>
-      <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+      <input type="text" name = "Apellido" id="disabledTextInput" class="form-control" placeholder="Apellidos">
     </div>
 
         <div class="mb-3">
       <label for="disabledTextInput" class="form-label">Fecha de nacimiento</label>
-      <input type="date" id="disabledTextInput" class="form-control" placeholder="">
+      <input type="date" name = "FeNacimiento" id="disabledTextInput" class="form-control" placeholder="Fecha de nacimiento">
     </div>
 
         <div class="mb-3">
       <label for="disabledTextInput" class="form-label">Correo electrónico</label>
-      <input type="email" id="disabledTextInput" class="form-control" placeholder="">
+      <input type="email" name = "Correo" id="disabledTextInput" class="form-control" placeholder="Correo electrónico">
     </div>
 
 
         <div class="mb-3">
       <label for="disabledTextInput" class="form-label">Contraseña</label>
-      <input type="password" id="disabledTextInput" class="form-control" placeholder="">
+      <input type="password" name = "Contra" id="disabledTextInput" class="form-control" placeholder="Contraseña">
     </div>
 
         <div class="mb-3">
       <label for="disabledTextInput" class="form-label">Biografía</label>
-      <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+      <input type="text" name = "Biografia" id="disabledTextInput" class="form-control" placeholder="Biografía">
     </div>
-
-    <a routerLink="/login" class="btn btn-success"><i aria-hidden="true"></i>Crear</a>
+    <button type="submit" class="btn btn-primary">
+      Crear Usuario
+    </button>
   </fieldset>
 </form>
