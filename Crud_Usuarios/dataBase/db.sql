@@ -17,6 +17,7 @@ CREATE TABLE usuarios (
   Biografia VARCHAR(200)
 );
 
+INSERT INTO usuarios VALUES ("admin", "admin","admin", "2012-01-12","admin","admin");
 -- to show all tables
 show tables;
 
