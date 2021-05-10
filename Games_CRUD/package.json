@@ -1,10 +1,9 @@
 {
   "name": "Games_CRUD",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/main.js"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +17,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "description": ""
 }
