@@ -1,19 +1,21 @@
 <app-navigation></app-navigation>
 <LINK REL=StyleSheet HREF="src/app/components/login-form/login-form.component.css" TITLE="Contemporaneo">
-<form>
+<form id = "post-form" action="http://localhost:3000/usuarios/entrar" method="POST">
   <div class="mb-3">
   <br>
   <br>
     <label for="exampleInputEmail1" class="form-label">Nombre de Usuario</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" name = "NoUsuario" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Contraseña
+    <label  for="exampleInputPassword1" class="form-label">Contraseña
 </label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <input type="password" name = "Contra" class="form-control" id="exampleInputPassword1">
   </div>
   <div class="content" style="display: inline-block;">
-    <a routerLink="/perfil" class="btn btn-success"><i aria-hidden="true"></i> Ingresar</a>
+    <button type="submit" class="btn btn-primary">
+      ingresar
+    </button>
 </div>
 </form>
 

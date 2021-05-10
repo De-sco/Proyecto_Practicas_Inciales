@@ -12,13 +12,13 @@ import { Observable } from 'rxjs';
 })
 export class GamesService {
 
-  API_URI = 'http://localhost:3000/api' // Aqui deber ir la ruta de donde se encuentra el servidor para hacer las peticiones
+  API_URI = 'http://localhost:3000/usuarios' // Aqui deber ir la ruta de donde se encuentra el servidor para hacer las peticiones
 
   constructor(private http: HttpClient) { }
 
   // Metodo para obtener todos los juegos del servidor
   getGames() {
-    return this.http.get(`${this.API_URI}/games`); // Peticion GET
+    return this.http.get(`${this.API_URI}`); // Peticion GET
   }
 
   // metodo para obtener un unico juego

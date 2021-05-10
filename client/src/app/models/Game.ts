@@ -4,8 +4,11 @@
 
 export interface Game {
     id?: number;
-    title?: string;
-    description?: string;
-    image?: string;
-    created_at?: Date
+    NoUsuario?: string;
+    Nombre?: string;
+    Apellido?: string;
+    FeNacimiento?: string;
+    Correo?: string;
+    Contra?: string;
+    Biografia?: string
 }
