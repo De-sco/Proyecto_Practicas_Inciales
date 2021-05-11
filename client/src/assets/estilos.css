@@ -1,0 +1,9 @@
+.navbar ul li .submenu {
+    padding: 1px;
+    position: absolute;
+    display: none;
+}
+
+.navbar ul li:hover .submenu {
+    display: block;
+}

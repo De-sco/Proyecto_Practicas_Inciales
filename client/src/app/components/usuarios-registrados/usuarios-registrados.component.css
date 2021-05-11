@@ -1,0 +1,17 @@
+.container, .mt-4, .mb-5, .card-body, .card{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn-success{
+    font-family: 'Montserrat', sans-serif;
+	color:#fff;
+	background-color:#6A2ECC;
+	border-color:#6A2ECC}
+
+.btn-danger{
+    font-family: 'Montserrat', sans-serif;
+	color:#fff;
+	background-color:#202020;
+	border-color:#202020
+
+}

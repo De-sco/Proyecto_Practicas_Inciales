@@ -1,0 +1,33 @@
+<!-- Navbar2 -->
+<app-navigator></app-navigator>
+
+<LINK REL=StyleSheet HREF="src/app/components/usuarios-registrados/usuarios-registrados.component.css" TITLE="Contemporaneo">
+<!-- Muestra en una tabla a todos los usuario registrados, y dos botones: uno para modificar el usuario (que lo dirigira a la pagina de 'perfil' y el boton para eliminar el usuario) -->
+<div class="container mt-4 mb-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="text-center mb-4 mt-4">Usuarios Registrados</h1>
+            <table class="table table-striped table-hover" id="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th class="text-center">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Perez</td>
+                        <td>
+                            <div class="contenedor" style="display: block; text-align: center;">
+                                <div class="content" style="display: inline-block;">
+                                    <a routerLink="/perfil" class="btn btn-success"><i class="fa fa-pencil" aria-hidden="true"></i> Modificar</a>
+                                    <a routerLink="" class="btn  btn-danger" style="margin-left: 30px;"><i class="far fa-trash-alt"></i> Eliminar</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

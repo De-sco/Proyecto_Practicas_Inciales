@@ -1,0 +1,47 @@
+<!-- Navbar2 -->
+<app-navigator></app-navigator>
+
+
+<!-- Mustra una tabla con todas los comentarios de algunos juegos -->
+
+<div class="container mt-4 mb-5">
+
+  <!-- Permite ingresar si se desea buscar por juego o por consola las reseñas o comentarios -->
+  <div class="row">
+    <div class="input-group mb-2 mt-4 col col-2" style="width: 30%;">
+      <label class="input-group-text" for="inputGroupSelect01">Filtrar por</label>
+      <select class="form-select" id="inputGroupSelect01">
+        <option selected>Juego</option>
+        <option value="1">Usuario</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <input type="text" class="form-control col col-2 mt-0 mb-2" aria-label="Text input with dropdown button" style="width: 28.3%; margin-left: 10px;" placeholder="Ingrese nombre del juego/usuario">
+  </div>
+
+  <!-- Tabla que va a mostrar toda la informacion y tendra un boton en donde se podra ver todos los comentarios de esa publicacion -->
+  <table class="table table-striped mt-4">
+    <thead class="table-dark">
+      <tr>
+        <th>Fecha de publicación</th>
+        <th>Usuario que lo creó</th>
+        <th>Juego al que pertenece</th>
+        <th>Comentarios</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>05/05/2021</td>
+        <td>usuario</td>
+        <td>Serpiente</td>
+        <td>
+          <a routerLink="/comentarios" class="btn btn-block btn-success">
+            <i class="fa fa-comments" aria-hidden="true"></i> Ver Comentarios
+          </a>
+        </td>
+      </tr>
+  
+    </tbody>
+  </table>
+</div>

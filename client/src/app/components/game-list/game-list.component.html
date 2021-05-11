@@ -1,0 +1,185 @@
+<!-- Navbar2 -->
+<app-navigator></app-navigator>
+
+<LINK REL=StyleSheet HREF="src/app/components/game-list/game-list.component.css" TITLE="Contemporaneo">
+<!-- Muestra todos los juegos registrados y tambien se pueden filtrar -->
+<div class="container mt-4 mb-5">
+    <div class="row">
+
+
+        <!-- Donde se seleccionara si hay que buscar el juego por consola o por nombre -->
+        <div class="row">
+            <div class="input-group mb-2 mt-4 ml-0 col col-2" style="width: 30%;">
+                <label class="input-group-text" for="inputGroupSelect01">Filtrar por</label>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Consola</option>
+                    <option value="1">Nombre</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Campo donde tiene que ingresar el nombre del juego o la consola -->
+        <div class="row">
+            <input type="text" class="form-control col col-2 mt-0 mb-4" aria-label="Text input with dropdown button"
+                style="width: 28.3%; margin-left: 10px;" placeholder="Ingrese el nombre de la consola/juego">
+        </div>
+
+
+        <!-- Tarjetas donde se muestra la informacion del juego (son las que se iran repitiendo) -->
+        <div class="col-md-4 mb-5">
+            <div class="card text-center">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                    <button class="btn btn-warning">
+                        <i class="fa fa-plus">Agregar a biblioteca</i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+                <img src="https://www.elcomercio.com/files/article_main/uploads/2020/01/10/5e191549c8bb6.jpeg"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+
+                    <h5><b>Detalles del juego</b></h5>
+                    <hr>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-tag" aria-hidden="true"></i><b>
+                            Nombre:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-gamepad" aria-hidden="true"></i><b>
+                            Consola a la que pertenece:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-calendar" aria-hidden="true"></i><b> Año
+                            de publicacion:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-commenting" aria-hidden="true"></i><b>
+                            Descripción:</b> xx</p>
+
+                    <a routerLink="/editar_juego" class="btn btn-primary btn-block mt-4">
+                        <i class="fa fa-pencil" aria-hidden="true"></i> EDITAR JUEGO
+                    </a>
+                    <br>
+                    <a routerLink="/comentarios" class="btn btn-secondary active mt-4">
+                        <i class="fa fa-comment-o" aria-hidden="true"></i> AGREGAR COMENTARIO
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tarjetas donde se muestra la informacion del juego (son las que se iran repitiendo) -->
+        <div class="col-md-4 mb-5">
+
+            <div class="card text-center">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                    <!-- {{game.title}} -->
+                    <button class="btn btn-warning">
+                        <i class="fa fa-plus">Agregar a biblioteca</i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+                <img src="https://www.elcomercio.com/files/article_main/uploads/2020/01/10/5e191549c8bb6.jpeg"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5><b>Detalles del juego</b></h5>
+                    <hr>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-tag" aria-hidden="true"></i><b>
+                            Nombre:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-gamepad" aria-hidden="true"></i><b>
+                            Consola a la que pertenece:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-calendar" aria-hidden="true"></i><b> Año
+                            de publicacion:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-commenting" aria-hidden="true"></i><b>
+                            Descripción:</b> xx</p>
+
+                    <a routerLink="/editar_juego" class="btn btn-primary btn-block mt-4">
+                        EDITAR JUEGO
+                    </a>
+                    <br>
+                    <a routerLink="/comentarios" class="btn btn-secondary active mt-4">
+                        <i class="fa fa-comment-o" aria-hidden="true"></i> AGREGAR COMENTARIO
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Tarjetas donde se muestra la informacion del juego (son las que se iran repitiendo) -->
+        <div class="col-md-4 mb-5">
+            <div class="card text-center">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                    <!-- {{game.title}} -->
+                    <button class="btn btn-warning">
+                        <i class="fa fa-plus">Agregar a biblioteca</i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+                <img src="https://www.elcomercio.com/files/article_main/uploads/2020/01/10/5e191549c8bb6.jpeg"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5><b>Detalles del juego</b></h5>
+                    <hr>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-tag" aria-hidden="true"></i><b>
+                            Nombre:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-gamepad" aria-hidden="true"></i><b>
+                            Consola a la que pertenece:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-calendar" aria-hidden="true"></i><b> Año
+                            de publicacion:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-commenting" aria-hidden="true"></i><b>
+                            Descripción:</b> xx</p>
+
+                    <a routerLink="/editar_juego" class="btn btn-primary btn-block mt-4">
+                        EDITAR JUEGO
+                    </a>
+                    <br>
+                    <a routerLink="/comentarios" class="btn btn-secondary active mt-4">
+                        <i class="fa fa-comment-o" aria-hidden="true"></i> AGREGAR COMENTARIO
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tarjetas donde se muestra la informacion del juego (son las que se iran repitiendo) -->
+        <div class="col-md-4 mb-5">
+            <!-- Aqui hay que agregar el *ngFor -->
+            <div class="card text-center">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                    <!-- {{game.title}} -->
+                    <button class="btn btn-warning">
+                        <i class="fa fa-plus">Agregar a biblioteca</i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+                <img src="https://www.elcomercio.com/files/article_main/uploads/2020/01/10/5e191549c8bb6.jpeg"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5><b>Detalles del juego</b></h5>
+                    <hr>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-tag" aria-hidden="true"></i><b>
+                            Nombre:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-gamepad" aria-hidden="true"></i><b>
+                            Consola a la que pertenece:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-calendar" aria-hidden="true"></i><b> Año
+                            de publicacion:</b> xx</p>
+                    <p class="mb-0" style="text-align: left;"><i class="fa fa-commenting" aria-hidden="true"></i><b>
+                            Descripción:</b> xx</p>
+
+                    <a routerLink="/editar_juego" class="btn btn-primary btn-block mt-4">
+                        EDITAR JUEGO
+                    </a>
+                    <br>
+                    <a routerLink="/comentarios" class="btn btn-secondary active mt-4">
+                        <i class="fa fa-comment-o" aria-hidden="true"></i> AGREGAR COMENTARIO
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

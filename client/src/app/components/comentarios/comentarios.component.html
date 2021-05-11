@@ -1,0 +1,63 @@
+<!-- Navbar2 -->
+<app-navigator></app-navigator>
+
+
+<!-- Va a permitir agregar un nuevo comentario y ver todos los comentario que fueron hechos al juego -->
+
+<div class="container mb-5 mt-5">
+    <div class="row">
+
+        
+
+        <!-- Muestra la informacion del juego en una tarjeta -->
+        <div class="card text-center col col-6">
+            <div class="card-header bg-dark text-white">
+                Nombre del juego
+            </div>
+            <img src="https://www.elcomercio.com/files/article_main/uploads/2020/01/10/5e191549c8bb6.jpeg"
+                class="card-img-top" alt="">
+            <div class="card-body">
+                <h5>Descripción del juego</h5>
+                <p class="mb-0">Consola a la que pertenece: xx</p>
+                <p class="mt-0">Año de publicacion: xx</p>
+            </div>
+        </div>
+
+        <!-- Lo que aparece al lado derecho de lo anterior. Solo tiene un textarea para agregar el comentario al juego -->
+        <div class="card col col-6">
+            <div class="card-body">
+                <form action="">
+                    <div class="form-group mt-4" id="coment">
+                        <textarea name="description" placeholder="Agregar comentario" rows="6" class="form-control mb-4" autofocus></textarea>
+                    </div>
+                    <div class="col text-center">
+                        <button class="btn btn-success btn-block"><i class="fa fa-plus" aria-hidden="true"></i> AGREGAR COMENTARIO</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Lo siguiente es una tabla, que va a mostrar el comentario y el usuario que la hizo -->
+        <div class="col-md-12 mx-auto mt-4">
+            <h1 class="text-center mb-3 mt-2 mb-4">Comentarios</h1>
+            <table class="table table-hover mt-4">
+                <thead>
+                    <tr>
+                        <th><i class="fa fa-user" aria-hidden="true"></i> Usuario</th>
+                        <th><i class="fa fa-comments" aria-hidden="true"></i> Comentario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>Comentario de usuario</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+    </div>
+</div>
